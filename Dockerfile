@@ -51,7 +51,7 @@ ENV PHP_VERSION 7.1.5
 ENV PHP_URL="https://secure.php.net/get/php-7.1.5.tar.xz/from/this/mirror" PHP_ASC_URL="https://secure.php.net/get/php-7.1.5.tar.xz.asc/from/this/mirror"
 ENV PHP_SHA256="d149a3c396c45611f5dc6bf14be190f464897145a76a8e5851cf18ff7094f6ac" PHP_MD5="fb0702321c7aceac68c82b8c7a10d196"
 
-RUN set -xe; \
+RUN sudo set -xe; \
   \
   fetchDeps=' \
     wget \
